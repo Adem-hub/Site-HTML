@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Présentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Add custom CSS here -->
+    <link href="css/full-slider.css" rel="stylesheet" />
+    <link href="css/adem.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="fill"style="background-color:#4f657a" ></div>
+          
+          <div class="carousel-caption">
+            <div class="titre">Projet Manga
+            </div>
+            <div class="jpeu">
+            <img class="jpeu"  src='adem.jpg' >
+          </div>
+          <h3>1</h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="fill" style="background-color:#444b55;"></div>
+          <div class="carousel-caption">
+            <div class="Sommaire"><p>Sommaire</p></div>
+            <div class="soussom"><p>-Introduction</p>
+            <p>-Code</p><p>-Problème</p>
+            <p>-Arborescence</p><p>-Conclusion</p></div>
+          
+            <h3>2</h3>
+        </div>
+        </div>
+        <div class="item">
+          <div class="fill" style="background-color:#835a59	;"></div>
+          <div class="carousel-caption">
+          <div class="Sommaire"><p>Introduction</p></div>
+          <div class="soussom"><p>Le projet "Web-Scrapper" est un projet qui nous a demandé énormément de temps (de nuit blanche surtout).
+          Le but du projet était de télécharger les scans d'un manga. Chaque site est différent c'est pourquoi nous avons une technique différente pour chaque site,
+          même si certains site se ressemble.
+          </p></div>
+            <h3>3</h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="fill" style="background-color:#4f6376	;"></div>
+          <div class="carousel-caption">
+            <div class="Sommaire"><p>Code</p></div>
+            <div class="soussome"><p>Le principe est assez simple. D'abord on analyse la page html(Navigate),
+             puis on cherche l'image(listimg) enfin on passe à l'url suivante(Next). Ici, on mettera en valeur la fonction Next qui a été modifiée et modifiée selon les sites que l'on faisait. Voici un exemple de fonction Next:</p></div>
+            <div><img class="img3" src="Next.png"></div>
+            <h3>4</h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="fill" style="background-color:#af2f57;"></div>
+          <div class="carousel-caption">
+            <div class="Sommaire"><p>Problème rencontré</p></div>
+            <div class="soussome"><p>En effet, nous avons eu un gros problème.C'était sur <a href="https://www.lirescan.me/">lirescan</a>, la fonction Next ne s'arretait pas car
+            le serveur nous renvoyer automatiquement sur le dernier lien disponible, donc le dernier chapitre se télecharge en boucle. Pour contrer se problème, nous avons, dans le fichier
+          download.py, crée une liste vide et dans la fonction DownloadListe nous avons fait ajouter chaque url d'image dans cette liste et enfin nous avons mis une condition:
+        si l'url d'une image est déja dans la liste alors l'url est égal à "Fin du Manga", mettant fin au processus</p></div>
+            <h3>5</h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="fill" style="background-color:#36129d;"></div>
+          <div class="carousel-caption">
+            <div class="Sommaire"><p>Arborescence</p></div>
+            <div class="soussome"><p>Au niveau de l'arborescence, nous avons fait quelque chose d'assez simple avec un dossier par manga.</p></div>
+            <img class="img4" src="doss.jpg">
+            <h3>6</h3>
+          </div>
+        </div>
+        <div class="item">
+          <div class="fill" style="background-color:#e2b15c"></div>
+          <div class="carousel-caption">
+            <div class="Sommaire"><p>Conclusion</p></div>
+            <div class="soussome"><p>Pour conclure ce projet nous a permis d'améliorer nos compétences en Python en apprenant de nouvelles choses comme le ".split" qui est un outil 
+              primordial pour la fonction Next.
+            </p></div>
+   
+            <img class="jpeupa"  src='merci.jpg' >
+            <p class="bas">Pour récuper notre travail<a href="https://github.com/ProfesseurGibaud/Web-Scrapper/tree/Othmanbdg-patch-1" > cliquez ici</a></p>
+            <h3>7</h3>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+      </a>
+    </div>
+
+    
+    <!-- /.container -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+      $(".carousel").carousel({
+        interval: 5000 //changes the speed
+      });
+    </script>
+  </body>
+</html>

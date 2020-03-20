@@ -1,0 +1,79 @@
+body {
+  background-image: url("adem.jpg");
+  background-size: cover;
+}
+.jpeu {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  color: red;
+  height: 300px;
+  width: 300px;
+}
+
+.titre {
+  font-size: 50px;
+  color: white;
+  text-decoration: underline;
+  top: 100px;
+  text-align: center;
+}
+
+.Sommaire {
+  font-size: 55px;
+  color: white;
+  text-decoration: underline;
+  margin-top: 25px;
+  text-align: left;
+}
+
+.TTitre {
+  font-size: 55px;
+  color: white;
+  text-decoration: underline;
+  position: fixed;
+  top: 100px;
+}
+.soussom {
+  font-size: 40px;
+  color: white;
+  text-align: left;
+}
+
+.soussom1 {
+  font-size: 40px;
+  color: white;
+  position: fixed;
+  top: 200px;
+}
+
+.soussom2 {
+  font-size: 33px;
+  color: white;
+  position: fixed;
+  top: 200px;
+}
+.soussome {
+  font-size: 30px;
+  color: white;
+  text-align: left;
+}
+
+.img4 {
+  height: 160px;
+  width: 160px;
+}
+
+.bas {
+  font-size: 30px;
+}
+
+.jpeupa {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 200px;
+  width: 200px;
+}
